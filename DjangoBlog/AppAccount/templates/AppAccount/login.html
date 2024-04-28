@@ -1,0 +1,45 @@
+{% extends "layout/base.html" %} {% block main %} {% load static %}
+<div class="container-fluid px-4 pb-4">
+  <header class="pt-5">{% include "AppAccount/layout/header.html" %}</header>
+  <hr />
+  <div class="container-fluid px-5">
+    <div class="row">
+      <!-- png -->
+      <div class="col-lg-8 col-md-8 col-sm-12">
+        <img
+          src="{% static 'img/AppAccount/login_01.jpg' %}"
+          class="d-block mx-lg-auto img-fluid"
+          alt="Bootstrap Themes"
+          width="700"
+          height="500"
+          loading="lazy"
+        />
+      </div>
+      <!-- login -->
+      <div class="col-lg-4 col-md-4 col-sm-12 pt-4 mx-auto">
+        {% if form.errors %} {% endif %} {% load django_bootstrap5 %}
+        <form method="post">
+          {% csrf_token %} {% bootstrap_form form %}
+          <div class="row p-3">
+            <button class="btn btn-primary w-100 py-2 my-1" type="submit">
+              Login
+            </button>
+            <a
+              class="btn btn-outline-secondary w-100 p-2 my-1"
+              href="{% url 'home' %}"
+              >Cancel</a
+            >
+            <input type="hidden" name="next" value="{{ next }}" />
+          </div>
+        </form>
+
+        <hr />
+        <p class="text-body-secondary pb-3">
+          Do not have an account?
+          <a class="text-body-secondary" href="#">Signup(not available now)</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %} {% block js %} {% endblock %}
