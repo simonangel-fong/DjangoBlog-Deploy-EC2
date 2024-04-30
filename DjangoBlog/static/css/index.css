@@ -11,7 +11,7 @@ body {
   
   main {
     /* background-color:lightgray; */
-    min-height: 33rem;
+    min-height: 100vh;
   }
   
   /* Navbar
