@@ -10,4 +10,4 @@ This is a repository of the DjangoBlog project to manage the deployment on AWS E
 | ------------------------------------------------------------ | ----------- |
 | [Manual AWS EC2 Deployment](./docs/document01/document01.md) |             |
 | [Enable HTTPS(ALB+ACM)](./docs/document02/document02.md)     |             |
-| [Connect with MYSQL within EC2](./docs/document03/document03.md)        |             |
+| [Connect with MYSQL](./docs/document03/document03.md)        |             |
