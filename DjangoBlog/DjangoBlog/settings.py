@@ -1,20 +1,25 @@
 
 from pathlib import Path
+import environ
+
+# Initialise environment variables
+env = environ.Env(
+    DEBUG=(bool, False)     # if not applied, DEBUG is False
+)
+environ.Env.read_env()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-0()30r0!^k(s*4jl01f6owz)6)gg8oqzd%j1cv4x&mm46l^ok6'
+SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = env('DEBUG')
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = env.list('ALLOWED_HOSTS')
 
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -61,10 +66,12 @@ WSGI_APPLICATION = 'DjangoBlog.wsgi.application'
 
 # Database
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    'default': env.db_url(
+        # refer to .env DATABASE_URL
+        'DATABASE_URL',                                 
+        # by default, use sqlite3 for dev
+        default=f'sqlite:///{BASE_DIR}/db.sqlite3'
+    )
 }
 
 
