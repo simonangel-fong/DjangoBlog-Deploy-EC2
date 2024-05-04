@@ -68,7 +68,7 @@ WSGI_APPLICATION = 'DjangoBlog.wsgi.application'
 DATABASES = {
     'default': env.db_url(
         # refer to .env DATABASE_URL
-        'DATABASE_URL',                                 
+        'DATABASE_URL',
         # by default, use sqlite3 for dev
         default=f'sqlite:///{BASE_DIR}/db.sqlite3'
     )
@@ -113,3 +113,23 @@ STATIC_ROOT = Path(BASE_DIR, 'collectstatic')
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# HTTPS settings
+# redirects all non-HTTPS requests to HTTPS
+SECURE_SSL_REDIRECT = True
+
+# use a secure cookie for the session cookie
+SESSION_COOKIE_SECURE = True
+
+# use a secure cookie for the CSRF cookie.
+CSRF_COOKIE_SECURE = True
+
+
+# HSTS(HTTP Strict Transport Security) settings
+# sets the HTTP Strict Transport Security header on all responses that do not already have it.
+SECURE_HSTS_SECONDS = 31536000  # 1 year
+# adds the preload directive to the HTTP Strict Transport Security header.
+SECURE_HSTS_PRELOAD = True
+# adds the includeSubDomains directive to the HTTP Strict Transport Security header.
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
