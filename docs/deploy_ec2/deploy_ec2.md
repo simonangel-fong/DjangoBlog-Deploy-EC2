@@ -1,8 +1,8 @@
-# Document01 - Manual AWS EC2 Deployment
+# DjangoBlog - Deploy on EC2: Manual AWS EC2 Deployment
 
 [Back](../../README.md)
 
-- [Document01 - Manual AWS EC2 Deployment](#document01---manual-aws-ec2-deployment)
+- [DjangoBlog - Deploy on EC2: Manual AWS EC2 Deployment](#djangoblog---deploy-on-ec2-manual-aws-ec2-deployment)
   - [Introduction](#introduction)
   - [Setting Up an EC2 Instance as a Server](#setting-up-an-ec2-instance-as-a-server)
   - [Connect to the EC2 Instance and Load Django Code](#connect-to-the-ec2-instance-and-load-django-code)
@@ -519,4 +519,4 @@ The document details connecting to the EC2 instance, creating a virtual environm
 
 ---
 
-[TOP](#document01---manual-aws-ec2-deployment)
+[TOP](#djangoblog---deploy-on-ec2-manual-aws-ec2-deployment)

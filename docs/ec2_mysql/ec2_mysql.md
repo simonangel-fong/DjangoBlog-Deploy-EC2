@@ -1,8 +1,8 @@
-# Document03 - Connect with MYSQL
+# DjangoBlog - Deploy on EC2: Connect with MYSQL
 
 [Back](../../README.md)
 
-- [Document03 - Connect with MYSQL](#document03---connect-with-mysql)
+- [DjangoBlog - Deploy on EC2: Connect with MYSQL](#djangoblog---deploy-on-ec2-connect-with-mysql)
   - [Introduction](#introduction)
   - [Installing MySQL](#installing-mysql)
   - [Create Database and User](#create-database-and-user)
@@ -156,4 +156,4 @@ Verify that the new blog post has been successfully saved to the `MySQL` databas
 
 ---
 
-[TOP](#document03---connect-with-mysql)
+[TOP](#djangoblog---deploy-on-ec2-connect-with-mysql)

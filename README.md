@@ -1,4 +1,4 @@
-# DjangoBlog: Deploy EC2
+# DjangoBlog - Deploy on EC2
 
 This is a repository of the DjangoBlog project to manage the deployment on AWS EC2.
 
@@ -6,8 +6,9 @@ This is a repository of the DjangoBlog project to manage the deployment on AWS E
 
 ## Documentation
 
-| Document                                                     | Medium Blog |
-| ------------------------------------------------------------ | ----------- |
-| [Manual AWS EC2 Deployment](./docs/document01/document01.md) |             |
-| [Enable HTTPS(ALB+ACM)](./docs/document02/document02.md)     |             |
-| [Connect with MYSQL](./docs/document03/document03.md)        |             |
+| Document                                                            | Medium Blog |
+| ------------------------------------------------------------------- | ----------- |
+| [Manual AWS EC2 Deployment](./docs/deploy_ec2/deploy_ec2.md)        |             |
+| [Enable HTTPS using certbot](./docs/https_certbot/https_certbot.md) |             |
+| [Enable HTTPS(ALB+ACM)](./docs/https_acm/https_acm.md)              |             |
+| [Connect with MYSQL](./docs/ec2_mysql/ec2_mysql.md)                 |             |

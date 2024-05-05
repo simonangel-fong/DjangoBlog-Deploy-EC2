@@ -1,8 +1,8 @@
-# Document02 - Enable HTTPS
+# DjangoBlog - Deploy on EC2: Enable HTTPS using ACM
 
 [Back](../../README.md)
 
-- [Document02 - Enable HTTPS](#document02---enable-https)
+- [DjangoBlog - Deploy on EC2: Enable HTTPS using ACM](#djangoblog---deploy-on-ec2-enable-https-using-acm)
   - [Introduction](#introduction)
   - [Enabling HTTPS with ACM](#enabling-https-with-acm)
   - [Debugging CSRF Verification Failed](#debugging-csrf-verification-failed)
@@ -81,4 +81,4 @@ This document details the process of securing the DjangoBlog application on `AWS
 
 ---
 
-[Top](#document02---enable-https)
+[Top](#djangoblog---deploy-on-ec2-enable-https-using-acm)
